@@ -2227,6 +2227,8 @@ fun! s:apply_syntax_highlightings()
 	exec 'hi LspDiagnosticsDefaultWarning' . s:fg_foreground . s:bg_spellcap
   exec 'hi LspDiagnosticsDefaultInformation' . s:fg_foreground . s:bg_spellcap
 
+	exec 'hi LspDiagnosticsUnderlineError' . s:fg_error_fg . s:fg_error_fg
+
 
 endfun
 " }}}
