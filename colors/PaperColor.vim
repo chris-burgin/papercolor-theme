@@ -2223,7 +2223,7 @@ fun! s:apply_syntax_highlightings()
   exec 'hi CocHintSign' . s:fg_todo_fg . s:bg_todo_bg . s:ft_bold
 
 	" Pluging: LSP
-	exec 'hi LspDiagnosticsDefaultError' . s:bg_foreground . s:bg_error_fg
+	exec 'hi LspDiagnosticsDefaultError' . s:fg_background . s:bg_error_fg
 	exec 'hi LspDiagnosticsDefaultWarning' . s:fg_foreground . s:bg_spellcap
   exec 'hi LspDiagnosticsDefaultInformation' . s:fg_foreground . s:bg_spellcap
 
