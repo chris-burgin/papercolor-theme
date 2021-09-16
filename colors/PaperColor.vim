@@ -2229,6 +2229,7 @@ fun! s:apply_syntax_highlightings()
 
 	exec 'hi LspDiagnosticsUnderlineError' . s:fg_error_fg . s:fg_error_fg
 
+	exec 'hi LspDiagnosticsFloatingError' . s:fg_error_fg . s:fg_error_fg
 
 endfun
 " }}}
