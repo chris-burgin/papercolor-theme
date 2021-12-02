@@ -85,6 +85,7 @@ fun! s:register_default_theme()
         \       'folded_bg' : ['#afd7ff', '153'],
         \       'wildmenu_fg': ['#444444', '238'],
         \       'wildmenu_bg': ['#ffff00', '226'],
+        \       'match_fg' : ['#d70087', '162'],
         \       'spellbad':   ['#ffafd7', '218'],
         \       'spellcap':   ['#ffffaf', '229'],
         \       'spellrare':  ['#afff87', '156'],
@@ -1047,6 +1048,9 @@ fun! s:set_color_variables()
   " WildMenu: Autocomplete command, ex: :color <tab><tab>
   call s:create_color_variables('wildmenu_fg', get(s:palette, 'wildmenu_fg', color00) , 'Black')
   call s:create_color_variables('wildmenu_bg', get(s:palette, 'wildmenu_bg', color06) , 'LightGray')
+
+  " Match:
+  call s:create_color_variables('match_fg', get(s:palette, 'match_fg', color00) , 'DarkMagenta')
 
   " Spelling: when spell on and there are spelling problems like this for example: papercolor. a vim color scheme
   call s:create_color_variables('spellbad', get(s:palette, 'spellbad', color04) , 'DarkRed')
@@ -2231,8 +2235,8 @@ fun! s:apply_syntax_highlightings()
 	exec 'hi LspDiagnosticsUnderlineError' . s:fg_error_fg . s:fg_error_fg
 
 	" Pluging: Compe
-	exec 'hi CmpItemAbbrMatch' . s:color10
-	exec 'hi CmpItemAbbrMatchFuzzy' . s:color10
+	exec 'hi CmpItemAbbrMatch' . s:fg_match_fg
+	exec 'hi CmpItemAbbrMatchFuzzy' . s:fg_match_fg
 endfun
 " }}}
 
