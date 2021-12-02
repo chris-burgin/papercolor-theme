@@ -176,6 +176,7 @@ fun! s:register_default_theme()
         \       'folded_bg' : ['#5f005f', '53'],
         \       'wildmenu_fg': ['#1c1c1c', '234'],
         \       'wildmenu_bg': ['#afd700', '148'],
+        \       'match_fg' : ['#d70087', '162'],
         \       'spellbad':   ['#5f0000', '52'],
         \       'spellcap':   ['#5f005f', '53'],
         \       'spellrare':  ['#005f00', '22'],
