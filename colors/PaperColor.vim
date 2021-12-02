@@ -2230,6 +2230,9 @@ fun! s:apply_syntax_highlightings()
 	exec 'hi LspDiagnosticsFloatingError' . s:fg_error_fg . s:fg_error_fg
 	exec 'hi LspDiagnosticsUnderlineError' . s:fg_error_fg . s:fg_error_fg
 
+	" Pluging: Compe
+	exec 'hi CmpItemAbbrMatch' . s:fg_color_10
+	exec 'hi CmpItemAbbrMatchFuzzy' . s:fg_color_10
 endfun
 " }}}
 
